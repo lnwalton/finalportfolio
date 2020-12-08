@@ -1,0 +1,1009 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Verdana", "Geneva", sans-serif;
+    overflow-y: scroll;
+}
+
+main {
+    width: 100vw;
+
+}
+
+/*CSS for index.html*/
+/*Set up Grid*/
+.grid-container{
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-columns: 1fr auto;
+    background-color: #d7d6d1;
+  }
+
+/*Side local page nav bar*/
+.side-hist {
+    display: none;
+    position: sticky;
+    top: 0px;
+    height: 10vh;
+}
+
+.sidebar-history {
+    background-color: #ff69b4;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-history a {
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+
+.sidebar-history a:hover {
+    background-color: #ffb6c1;
+    color: #000000;
+    text-decoration: underline;
+}
+
+/*Timeline*/
+.timeline {
+    background-color: #000000;
+    padding: 10px;
+
+    /*Grid*/
+    grid-column: 2 / span 1;
+    grid-row: 1;
+}
+
+.timeline h2, .silents h2, .twenties h2, .thirties h2, .forties h2, .fifties h2, .sixties h2, .seventies h2, .eighties h2, .nineties h2, .thous h2, .thoustens h2, .future h2  {
+    font-size: 20px;
+    color: #fc69b4;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.timeline p, .silents ul, .twenties ul, .thirties ul, .forties ul, .fifties ul, .sixties ul, .seventies ul, .eighties ul, .nineties ul, .thous ul, .thoustens ul, .future p {
+    font-size: 15px;
+    color: #d7d6d1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*Silents*/
+.silents {
+    padding: 10px;
+    background-color: #000000;
+
+    /*Grid*/
+    grid-column: 2 / span 1;
+    grid-row: 2;
+}
+
+.silents li, .twenties li, .thirties li, .forties li, .fifties li, .sixties li, .seventies li, .eighties li, .nineties li, .thous li, .thoustens li {
+    list-style: none;
+    line-height: normal;
+    padding-bottom: 20px;
+}
+
+.silents .timeline-moment, .twenties .timeline-moment, .thirties .timeline-moment, .forties .timeline-moment, .fifties .timeline-moment, .sixties .timeline-moment, .seventies .timeline-moment, .eighties .timeline-moment, .nineties .timeline-moment, .thous .timeline-moment, .thoustens .timeline-moment {
+    text-decoration: underline;
+}
+
+.silents .timeline-movie, .twenties .timeline-movie, .thirties .timeline-movie, .forties .timeline-movie, .fifties .timeline-movie, .sixties .timeline-movie, .seventies .timeline-movie, .eighties .timeline-movie, .nineties .timeline-movie, .thous .timeline-movie, .thoustens .timeline-movie {
+    font-style: italic;
+}
+
+/*Twenties*/
+.twenties {
+    padding: 10px;
+    background-color: #000000;
+
+    /*Grid*/
+    grid-column: 2 / span 1;
+    grid-row: 3;
+}
+
+/*Thirties*/
+.thirties {
+    padding: 10px;
+    background-color: #000000;
+
+    /*Grid*/
+    grid-column: 2 / span 1;
+    grid-row: 4;
+}
+
+/*Forties*/
+.forties {
+    padding: 10px;
+    background-color: #000000;
+
+    /*Grid*/
+    grid-column: 2 / span 1;
+    grid-row: 5;
+}
+
+/*Fifties*/
+.fifties {
+    padding: 10px;
+    background-color: #000000;
+
+    /*Grid*/
+    grid-column: 2 / span 1;
+    grid-row: 6;
+}
+
+/*Sixties*/
+.sixties {
+    padding: 10px;
+    background-color: #000000;
+
+    /*Grid*/
+    grid-column: 2 / span 1;
+    grid-row: 7;
+}
+
+/*Seventies*/
+.seventies {
+    padding: 10px;
+    background-color: #000000;
+
+    /*Grid*/
+    grid-column: 2 / span 1;
+    grid-row: 8;
+}
+
+/*Eighties*/
+.eighties {
+    padding: 10px;
+    background-color: #000000;
+
+    /*Grid*/
+    grid-column: 2 / span 1;
+    grid-row: 9;
+}
+
+/*Nineties*/
+.nineties {
+    padding: 10px;
+    background-color: #000000;
+
+    /*Grid*/
+    grid-column: 2 / span 1;
+    grid-row: 10;
+}
+
+/*Thousands*/
+.thous {
+    padding: 10px;
+    background-color: #000000;
+
+    /*Grid*/
+    grid-column: 2 / span 1;
+    grid-row: 11;
+}
+
+.thoustens {
+    padding: 10px;
+    background-color: #000000;
+
+    /*Grid*/
+    grid-column: 2 / span 1;
+    grid-row: 12;
+}
+
+.future {
+    padding: 10px;
+    background-color: #000000;
+
+    /*Grid*/
+    grid-column: 2 / span 1;
+    grid-row: 13;
+}
+
+/*End CSS for index.html*/
+
+
+
+
+
+
+
+/*Start CSS for actresses.html*/
+.actress-subheader, .ref-title {
+    background-color: #000000;
+    color: #ff69b4;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 32px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.actresses {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFE4E1;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.streep-card, .davis-card, .smith-card, .lupita-card, .witherspoon-card, .robbie-card, .wu-card, .spencer-card, .gadot-card {
+    margin: 12px;
+    padding: 0 0 10px 0;
+    background-color: #000000;
+    max-width: 400px;
+    max-height: 300px;
+    overflow: auto;
+    color: #d7d6d1;
+    border: 10px solid #ff69b4
+}
+
+.streep-card img, .davis-card img, .smith-card img, .lupita-card img, .witherspoon-card img, .robbie-card img, .wu-card img, .spencer-card img, .gadot-card img {
+    max-width: 30%;
+    max-height: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    width: 50%;
+    border-radius: 50%;
+    -webkit-filter: grayscale(100%);
+}
+
+
+.actresses li {
+    line-height: normal;
+    list-style: none;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.actresses h3 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #ff69b4
+}
+
+/*End CSS for actresses.html*/
+
+
+/*Start CSS for classics.html*/
+
+.classics-section {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFE4E1;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+
+.classics-subheader {
+    background-color: #000000;
+    color: #ff69b4;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 32px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 10px;
+    border: 10px solid #000000;
+}
+
+
+.flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-inner, .flip-inner:focus {
+    transform: rotateY(180deg);
+}
+
+.flip-front, .flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-front {
+    background-color: #ff69b4;
+    color: #000000;
+    transform: rotateY(180deg)
+}
+
+.flip-back {
+    background-color: #ff69b4;
+    color: #000000;
+}
+
+.flip-front img {
+    width: 300px;
+    height: 300px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-back h1 {
+    font-size: 70px;
+    padding: 120px 0;
+    text-align: center;
+}
+
+/*End CSS for classics html*/
+
+
+/*Start CSS for moderns html*/
+/*Adapted from: 'https://escss.blogspot.com/2017/04/auto-hexagonal-css-grid-layout.html'*/
+
+*, *:after, *:before {box-sizing: inherit;}
+
+* {margin:0;padding:0;border: 0 none; position: relative;}
+
+:root {
+	--Nhexa: 4;
+	--gap: 2vw;
+	--size: calc(calc(100vw / var(--Nhexa)) - var(--gap));
+}
+
+.moderns-html {
+	background: #ff69b4;
+    box-sizing: border-box;
+	font-size: 1rem;
+}
+
+.moderns-body {
+    padding-right: calc(var(--size) * .5);
+	overflow-X: hidden;
+	hyphens: auto;
+}
+
+.moderns-subheader {
+    background-color: #000000;
+    color: #ff69b4;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 32px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100vw;
+}
+
+.moderns-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: calc(var(--size) * .5) auto 0;
+    width: calc(var(--size) * calc(var(--Nhexa) - 1));
+    display: grid;
+    grid-template-columns: repeat(var(--Nhexa), 1fr);
+    grid-gap: var(--gap);
+}
+
+article {
+    background: #000000;
+    width: var(--size); 
+    height: calc(var(--size) / 1.1111111);
+	clip-path: url(#hexagono);
+    clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+    margin-right: calc(var(--size) / 2);
+	color: #ff69b4;
+    overflow: auto;
+}
+
+article:nth-child(2n) {margin: calc(var(--size) * -.5) calc(var(--size) * -.25) 0 calc(var(--size) * -.75);}
+
+article::before {
+	content: '';
+	float: left;
+	width: 25%;
+	height: 100%;
+	clip-path: polygon(0% 0%, 100% 0%, 0% 50%, 100% 100%, 0% 100%);
+	shape-outside: polygon(0% 0%, 100% 0%, 0% 50%, 100% 100%, 0% 100%);
+}
+
+.moderns-img {
+  width: var(--size);
+	height: var(--size);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transform-origin: 0% 50%;
+	transition: .75s;
+	clip-path: url(#hexagono);
+	clip-path: inherit;
+    z-index:  10;
+    -webkit-filter: grayscale(100%);
+    
+}
+
+article:hover img {transform: translate(-50%, -50%) rotate(-110deg);}
+
+h2 {
+    font-size: 100%;
+    text-align: center;
+}
+
+figure {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	max-width: 50%;
+	height: 100%;
+	font-size: calc(9 / var(--Nhexa) * 1vw);
+	line-height: 1;
+	color: #ff69b4;
+	transition: .75s .05s;
+    text-align: center;
+}
+
+figure p {
+	font-size: 80%;
+	line-height: 1.2;
+	width: 100%;
+}
+
+.moderns-body > p {
+	font-size: 1.5rem;
+	margin: 2rem 0 1rem calc(var(--size) * .5);
+	font-weight: 200;
+}
+
+/*End CSS for moderns html*/
+
+/*Start CSS for contact & instagram html*/
+.contact-body, .insta-body {
+    margin:0;
+    padding:0;
+    text-align: center;
+    background-color: #FFE4E1;
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+}
+
+.contact-title {
+    margin-top: 50px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.contact-title h1 {
+    padding-bottom: 20px;
+    font-size: 32px;
+    line-height: 10px;
+}
+
+.insta-title h1 {
+    font-size: 32px;
+    padding: 20px;
+    line-height: 30pt;
+}
+
+.insta-title h2 {
+    font-size: 75px;
+    padding-bottom: 20px;
+    color: #ff69b4;
+    animation-name: camera;
+    animation-duration: 5s;
+    display: none;
+}
+
+@keyframes camera {
+    0% {color: #ffffff}
+    25% {color: #d7d6d1}
+    50% {color: #ffb6c1}
+    75% {color: #fda3d0;}
+    100% {color: #ff69b4}
+}
+
+form {
+    margin-top: 50px;
+}
+
+.form-control {
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000000;
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 16px;
+    width: 75vw;
+}
+
+input {
+    height: 45px;
+}
+
+form .submit {
+    background: #000000;
+    border-color: transparent;
+    color: #ff69b4;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+    width: 50vw;
+}
+
+form .submit:hover {
+    background-color: #ff69b4;
+    color: #000000;
+    cursor: pointer;
+}
+
+label {
+    display: none;
+}
+/*End CSS for contact & instagram html*/
+
+/*Start CSS for landing page*/
+.index-title h1 {
+    background-color: #000000;
+    color: #ff69b4;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 32px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.index-title h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 25px;
+    margin-right:25px
+}
+
+.index-body {
+    background-color: #FFE4E1;
+}
+
+.index-figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.index-figure iframe {
+    width: 50vw;
+}
+
+.index-subheader {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 32px;
+    line-height: 30px;
+    text-align: center;
+    width: 100vw;
+}
+
+.countdown-container {
+    margin: 0 auto;
+    text-align: center;
+    width: 75vw;
+  }
+  
+.countdownlist {
+    display: inline-block;
+    font-size: 24px;
+    list-style-type: none;
+    padding: 20px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+  
+.countdownlist span {
+    display: block;
+    font-size: 80px;
+  }
+  
+.countdown-message {
+    font-size: 70rem;
+  }
+  
+#countdown-content {
+    display: none;
+    padding: 20px;
+  }
+  
+.emoji {
+    padding: 0 10px;
+    font-size: 32px;
+  }
+ 
+.quiz-grid {
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #000000;
+    padding: 10px 50px 50px 50px;
+    border: 5px solid #ff69b4;
+    width: 75vw;
+    
+}
+ 
+.quiz-grid h1 {
+    background-color: #ff69b4;
+    font-size: 50px;
+    text-align: center;
+    color: #000000;
+    padding: 2px 0px;
+    
+}
+ 
+#score {
+    color: #ff69b4;
+    text-align: center;
+    font-size: 30px;
+}
+ 
+.quiz-grid #question {
+    font-size: 30px;
+    color: #ff69b4;
+    text-align: center;
+}
+ 
+.buttons {
+    margin-top: 30px;
+
+}
+ 
+#button0, #button1, #button2, #button3 {
+    background-color: #ffb6c1;
+    width: 250px;
+    font-size: 20px;
+    color: #000000;
+    border: 2px solid #ff69b4;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    padding: 10px 10px;
+}
+ 
+#button0:hover, #button1:hover, #button2:hover, #button3:hover {
+    cursor: pointer;
+    background-color: #FFE4E1;
+}
+ 
+#button0:focus, #button1:focus, #button2:focus, #button3:focus {
+    outline: 0;
+}
+ 
+#progress {
+    color: #d7d6d1;
+    font-size: 18px;
+}
+
+.quiz-div {
+    margin-bottom: 50px;
+    width: 100vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Common Header w/ Parallax Image*/
+header {
+    /*Parallax Image*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000000;
+    height: auto;
+    background-image: url("../images/wall.jpg");
+    width: 100vw;
+
+}
+
+/*Common Header*/
+header h1{
+    font-family: "Sofia";
+    font-size: 50px;
+    line-height: 1;
+    padding: 25px 0;
+    text-align: center;
+    font-weight: bolder;
+}
+
+header h2 {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 50px;
+    padding-bottom: 20px;
+}
+
+/*Common nav using flex*/
+.navigation {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    background-color: #000000;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+
+}
+
+.navigation a {
+    color: #d7d6d1;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.navigation li:last-of-type a {
+    border-bottom: none;
+}
+
+.navigation a:hover {
+    background-color: #ffb6c1;
+    color: #000000;
+    text-decoration: underline;
+}
+
+.navigation a.active-page {
+    background-color: #ff69b4;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+
+
+/*Skip to Main Content*/
+.jump a {
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  
+    position: absolute;
+    top: -40px;
+}
+
+.jump a:focus {
+    top: 0px;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.jump a:hover {
+    text-decoration: underline;
+}
+
+.jump a:active {
+    background-color: #ff69b4;
+    color: #000000;
+    text-decoration: underline;
+}
+
+/*Common Footer*/
+footer{
+    background-color: #d7d6d1;
+    font-size: 10px;
+    color: #000000;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    width: 100vw;
+  }
+
+footer p {
+    padding-right: 10px;
+    font-size: 15px;
+}
+
+footer a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Media query for reduced motion*/
+@media screen and (prefers-reduced-motion: reduce){
+    html {
+        scroll-behavior: auto; /* Removes scroll animation */
+    }
+  
+    .jump a {
+      -webkit-transition: none; /* sets to default setting */
+      transition: none;        /* sets to default setting */
+     }
+  
+    /*Turn off parallax*/
+    header {
+      background-attachment: initial;
+    }
+
+    .moderns-img {
+        transition: none;
+    }
+
+    .flip-inner {
+        transition: none;
+    }
+
+    .insta-title h2 {
+        animation: none;
+    }
+  }
+
+/*Media query for tablet screen*/
+@media all and (min-width: 600px) {
+    .navigation {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .navigation a {
+        text-transform: capitalize;
+    }
+
+    .insta-title h2 {
+        display: block;
+    }
+
+    header h1 {
+        font-size: 60px;
+        padding: 35px 0px;
+    }
+
+    header h2 {
+       font-size: 27px;
+    }
+
+    header {
+        height: 250px;
+    }
+
+    .side-hist {
+        display: block;
+    }
+
+    .timeline h2, .silents h2, .twenties h2, .thirties h2, .forties h2, .fifties h2, .sixties h2, .seventies h2, .eighties h2, .nineties h2, .thous h2, .thoustens h2, .future h2  {
+       font-size: 27px;
+   }
+
+   .timeline p, .silents ul, .twenties ul, .thirties ul, .forties ul, .fifties ul, .sixties ul, .seventies ul, .eighties ul, .nineties ul, .thous ul, .thoustens ul, .future p {
+       font-size: 18px;
+   }
+
+
+ }
+ 
+ /*Media query for laptop*/
+ @media all and (min-width: 800px) {
+     .navigation {
+         flex-direction: row;
+         justify-content: flex-end;
+     }
+
+     .navigation a {
+        text-transform: capitalize;
+    }
+
+     .insta-title h2 {
+         display: block;
+     }
+
+     header h1 {
+         font-size: 70px;
+         padding: 50px 0px;
+     }
+
+     header h2 {
+        font-size: 32px;
+     }
+
+     header {
+         height: 350px;
+     }
+
+     .side-hist {
+         display: block;
+     }
+
+     .timeline h2, .silents h2, .twenties h2, .thirties h2, .forties h2, .fifties h2, .sixties h2, .seventies h2, .eighties h2, .nineties h2, .thous h2, .thoustens h2, .future h2  {
+        font-size: 32px;
+    }
+
+    .timeline p, .silents ul, .twenties ul, .thirties ul, .forties ul, .fifties ul, .sixties ul, .seventies ul, .eighties ul, .nineties ul, .thous ul, .thoustens ul, .future p {
+        font-size: 20px;
+    }
+
+
+}
+
+ /*Media query for hexagonal grid*/
+ @media only screen and (min-width: 1100px) {:root {--Nhexa: 6;}}
+ @media only screen and (max-width: 600px) {
+     :root {--Nhexa: 2;}
+     body {margin-right: calc(var(--size) * .3);}
+ }
